@@ -7,7 +7,8 @@ const highlights = [
     title: "Vision Pro",
     description: "Twice the speed. Twice the storage",
     price: "From $999.",
-    imageUrl: "../../assets/home/Apple-Vision-Pro.jpg",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnNNSnb-uG1cTZ8n7RNEgbo37yWo5mMC9z5HaANBpL8e0D4wrDxDk2SK4ezOpekwaOzAQ&usqp=CAU",
   },
   {
     id: 2,
@@ -30,7 +31,7 @@ const Highlights = () => {
     <section
       key={highlight.id}
       className="second-hightlight-wrapper py-5"
-      style={{ backgroundImage: `url(${highlight.imageUrl})` }}
+      style={{ backgroundImage: `url(${highlight.imageUrl})`, height:"580px" }}
     >
       <div className="container">
         <div className="new-alert">New</div>
