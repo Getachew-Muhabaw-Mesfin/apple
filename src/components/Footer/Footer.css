@@ -60,3 +60,9 @@
 .upper-text-container a {
   color: #515154;
 }
+ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: underline;
+}

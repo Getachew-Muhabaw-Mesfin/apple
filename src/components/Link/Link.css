@@ -18,7 +18,8 @@
 	font-size: 21px;
 }
 .links-wrapper ul li a:hover {
-	color: #000;
+
+    text-decoration: underline;
 }
 .links-wrapper ul li a:after {
   font-family: "FontAwesome";

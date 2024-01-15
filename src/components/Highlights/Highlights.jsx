@@ -1,30 +1,49 @@
 import Link from "../Link/Link";
+import "./Highlight.css";
 
- const Highlight = () => {
-  return (
-   <section className="second-hightlight-wrapper py-5">
+const highlights = [
+  {
+    id: 1,
+    title: "Vision Pro",
+    description: "Twice the speed. Twice the storage",
+    price: "From $999.",
+    imageUrl: "../../assets/home/Apple-Vision-Pro.jpg",
+  },
+  {
+    id: 2,
+    title: "Vision Pro",
+    description: "Twice the speed. Twice the storage",
+    price: "From $999.",
+    imageUrl: "../../assets/home/Apple-iPhone-15-Pro.webp",
+  },
+  {
+    id: 3,
+    title: "Vision Pro",
+    description: "Twice the speed. Twice the storage",
+    price: "From $999.",
+    imageUrl: "../../assets/home/iphone-15.png",
+  },
+];
+
+const Highlights = () => {
+  return highlights.map((highlight) => (
+    <section
+      key={highlight.id}
+      className="second-hightlight-wrapper py-5"
+      style={{ backgroundImage: `url(${highlight.imageUrl})` }}
+    >
       <div className="container">
         <div className="new-alert">New</div>
 
-        <div className="title-wraper bold black">MacBook Air</div>
+        <div className="title-wraper bold black">{highlight.title}</div>
 
-        <div className="description-wrapper black">
-          Twice the speed. Twice the storage.
-        </div>
+        <div className="description-wrapper black">{highlight.description}</div>
 
-        <div className="price-wrapper grey">From $999.</div>
-        <Link/>
-
+        <div className="price-wrapper grey">{highlight.price}</div>
+        <Link />
       </div>
     </section>
-  )
-}
-
-
-const Highlights = () => {
-  return (
-   <Highlight/>
-  );
+  ));
 };
 
 export default Highlights;

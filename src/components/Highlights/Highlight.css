@@ -1,0 +1,28 @@
+.second-hightlight-wrapper {
+  height: 580px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-color: #fbfbfd;
+  text-align: center;
+  padding: 65px 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.title-wraper {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+  padding-top: 20rem;
+  color: black;
+}
+.description-wrapper {
+	font-size: 26px;
+	padding: 10px 0;
+  color: black;
+}
+.price-wrapper{
+  color: black;
+}
