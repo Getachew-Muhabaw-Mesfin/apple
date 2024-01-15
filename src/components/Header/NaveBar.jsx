@@ -1,6 +1,11 @@
+import search from "../../assets/icons/search-icon-sm.png";
+import applLogo from "../../assets/icons/logo-sm.png";
+import cart from "../../assets/icons/cart-sm.png";
+import "./Navbar.css";
+
 const NaveBar = () => {
   return (
-    <div className="nav-wrapper fixed-top">
+    <div className="nav-wrapper fixed-top bg-dark ">
       <div className="container">
         <nav className="navbar navbar-toggleable-sm navbar-expand-md">
           <button
@@ -12,14 +17,24 @@ const NaveBar = () => {
             ☰
           </button>
           <a className="navbar-brand mx-auto" href="#">
-            <img src="images/icons/logo-sm.png" />
+            <img src={applLogo} />
           </a>
 
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav nav-justified w-100 nav-fill">
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="/mac/">
+                  Store
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="/mac/">
                   Mac
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="/mac/">
+                  iPad
                 </a>
               </li>
               <li className="nav-item">
@@ -29,37 +44,47 @@ const NaveBar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#">
-                  ipad
+                  Watch
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#">
-                  watch
+                  Vision
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#">
-                  tv
+                  AirPods
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#">
-                  Music
+                  Tv&Home
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#">
-                  Support
+                  Entertainment
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#">
+                  Accessories
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#">
+                  support
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="/search/">
-                  <img src="images/icons/search-icon-sm.png" />
+                  <img src={search} />
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="/cart/">
-                  <img src="images/icons/cart-sm.png" />
+                  <img src={cart} />
                 </a>
               </li>
             </ul>
