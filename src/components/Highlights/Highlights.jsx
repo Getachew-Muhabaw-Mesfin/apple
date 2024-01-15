@@ -31,7 +31,7 @@ const Highlights = () => {
     <section
       key={highlight.id}
       className="second-hightlight-wrapper py-5"
-      style={{ backgroundImage: `url(${highlight.imageUrl})`, height:"580px" }}
+      // style={{ backgroundImage: `url(${highlight.imageUrl})`, height:"580px" }}
     >
       <div className="container">
         <div className="new-alert">New</div>
