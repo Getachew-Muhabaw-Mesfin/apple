@@ -1,4 +1,3 @@
-
 import Link from "../Link/Link";
 import Watch9 from "../../assets/images/logos/promo_logo_apple_watch_series_9_large.png";
 import WatchUltera from "../../assets/images/logos/promo_logo_apple_watch_ultra2__large.png";
@@ -6,13 +5,14 @@ import MacBook from "../../assets/images/logos/mackbook_log.jpg";
 import Fitness from "../../assets/images/logos/promo_logo_fitness_large.png";
 import ApplCard from "../../assets/images/logos/logo_card_large.png";
 import TradeIn from "../../assets/../assets/images/logos/logo_tradein__large.png";
+import "./GridProduct.css";
 
 const promos = [
   {
     id: 1,
     icon: Watch9,
     description: "Smart. Brighter.Mightier",
-    bgImage: "",
+    bgImage: "apple_watch9_series",
   },
   {
     id: 2,
@@ -50,13 +50,10 @@ const promos = [
 
 const GridProduct = () => {
   return (
-    <div className="container">
+    <div className="m">
       <div className="row">
         {promos.map((product, id) => (
-          <div
-            key={id}
-            className={`right-side-wrapper ${product.bgImage} col-sm-12 col-md-6`}
-          >
+          <div key={id} className={`${product.bgImage} col-sm-12 col-md-6`}>
             <div className="right-side-container">
               <div className="top-logo-wrapper">
                 <div className="logo-wrapper">
@@ -149,6 +146,3 @@ export default GridProduct;
 // };
 
 // export default GridProduct;
-
-
-

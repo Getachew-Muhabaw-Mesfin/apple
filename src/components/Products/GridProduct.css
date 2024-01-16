@@ -1,8 +1,8 @@
-.right-side-wrapper {
-    background-image:  url("../images/home/apple-card-monthly.jpg"); 
+.apple_watch9_series {
+    background-image:  url("../../assets/images/promos/promo_apple_watch_series_9_order_large.jpg"); 
 	background-color: #fbfbfd;
 	background-position: bottom;
 	padding-top: 35px;
-	margin: 0 0 10px 0;
 	background-size: auto;	
+	height: 10rem;
 }
