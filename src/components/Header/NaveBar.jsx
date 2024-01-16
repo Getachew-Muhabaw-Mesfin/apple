@@ -1,6 +1,6 @@
-import search from "../../assets/icons/search-icon-sm.png";
-import applLogo from "../../assets/icons/logo-sm.png";
-import cart from "../../assets/icons/cart-sm.png";
+import search from "../../assets/images/logos/search-icon-sm.png";
+import applLogo from "../../assets/images/logos/logo-sm.png";
+import cart from "../../assets/images/logos/cart-sm.png";
 import "./Navbar.css";
 
 const NaveBar = () => {
