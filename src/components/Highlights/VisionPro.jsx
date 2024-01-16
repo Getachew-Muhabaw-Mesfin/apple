@@ -3,7 +3,7 @@ import Link from "../Link/Link"
 import visonPro from "../../assets/images/logos/hero_logo_apple_vision_pro___large.png"
 const VisionPro = () => {
   return (
-    <section className="first-hightlight-wrapper">
+    <section className="vision_pro">
       <div className="container text-dark">
         <img src={visonPro} alt="Vision Pro" className="img-fluid " />
         <h2 className="bold black ">

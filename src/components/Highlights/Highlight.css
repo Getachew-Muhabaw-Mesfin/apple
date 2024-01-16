@@ -1,10 +1,10 @@
-.first-hightlight-wrapper {
+.vision_pro {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   background-image: url("../../assets/images/heroes/hero_apple_vision_pro_largetall.jpg");
-  height: 700px;
+  height: 43.75rem;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: initial;
@@ -13,4 +13,24 @@
   padding: 20px; /* Adjust padding as needed */
   color: #fff;
   margin-bottom: 10px;
+}
+.iphone15Pro {
+	background-image: url("../../assets/images/heroes/hero_iphone15pro_largetall.jpg");
+	height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+	text-align: center;
+	padding: 65px 20px;
+	color: #fff;
+}
+.iphone15 {
+	background-image: url("../../assets/images/heroes/hero_iphone15_largetall.jpg");
+	height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+	text-align: center;
+	padding: 65px 20px;
+	color: #fff;
 }
