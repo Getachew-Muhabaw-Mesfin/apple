@@ -2,6 +2,7 @@ import "./Highlight.css";
 import Link from "../Link/Link"
 import visonPro from "../../assets/images/logos/hero_logo_apple_vision_pro___large.png"
 const VisionPro = () => {
+    // const v = "vision_pro";
   return (
     <section className="vision_pro">
       <div className="container text-dark">
