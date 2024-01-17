@@ -1,7 +1,7 @@
 import Link from "../Link/Link";
 import products from "./produt_data";
 
-const GridProduct = () => {
+const GridProducts = () => {
   return (
     <div className="row m-3">
       {products.map((product, id) => (
@@ -10,7 +10,9 @@ const GridProduct = () => {
           className={`${product.bgImageWithStyle} col-sm-12 col-md-6`}
         >
           <div className="text-center">
-            <img src={product.icon} alt="logo" />
+            <a href={product.url}>
+              <img src={product.icon} alt="logo" />
+            </a>
           </div>
           <div className="description_style">
             {product.description.split("\n").map((line, index) => (
@@ -27,7 +29,7 @@ const GridProduct = () => {
   );
 };
 
-export default GridProduct;
+export default GridProducts;
 
 ///////////////////////////////////////Without A Break for Products that has Loger description //////////////////////////
 
@@ -55,8 +57,6 @@ export default GridProduct;
 // };
 
 // export default GridProduct;
-
-
 
 //////////////////////////Reference incase if not working  ////////////////////////
 // import Watch9 from "../../assets/images/logos/promo_logo_apple_watch_series_9_large.png";
