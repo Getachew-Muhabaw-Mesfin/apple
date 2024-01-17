@@ -64,7 +64,7 @@ const naveItems = [
 const NaveBar = () => {
   return (
     // TODO: Working on Reusablity of List and Pass text and Link As Object
-    <div className="nav-wrapper fixed-top bg-dark ">
+    <div className="nav-wrapper fixed-top bg-dark text-center ">
       <div className="container">
         <nav className="navbar navbar-toggleable-sm navbar-expand-md">
           <button
