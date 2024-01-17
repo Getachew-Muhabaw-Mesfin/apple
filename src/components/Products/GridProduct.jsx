@@ -18,33 +18,33 @@ const promos = [
     id: 2,
     icon: WatchUltera,
     description: "Next level adventure",
-    bgImage: "",
+    bgImage: "watchUltra2",
   },
   {
     id: 3,
     icon: MacBook,
     description: "Mind-blowing. Head-turning",
-    bgImage: "",
+    bgImage: "mackBookPro",
   },
   {
     id: 4,
     icon: Fitness,
     description:
       "From HIIT to Yoga. From 5 to 45 minutes. There's Something For everyone",
-    bgImage: "",
+    bgImage: "fitness",
   },
   {
     id: 5,
     icon: ApplCard,
     description: "Get up to 3% Daily Cash back with every Purchase",
-    bgImage: "",
+    bgImage: "appleCard",
   },
   {
     id: 6,
     icon: TradeIn,
     description:
       "Get $180-$620 in credit when you trade in iPhone 11 or Higher.",
-    bgImage: "",
+    bgImage: "tradein",
   },
 ];
 

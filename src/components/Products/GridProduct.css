@@ -4,5 +4,52 @@
 	background-position: bottom;
 	padding-top: 35px;
 	background-size: auto;	
-	height: 10rem;
+	height: 36.125rem;
+	width: 58.313rem;
+	color: white;
+}
+.watchUltra2{
+	background-image:  url("../../assets/images/promos//promo_apple_watch_ultra2_order_large.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	background-size: auto;	
+	height: 36.125rem;
+	width: 58.313rem;
+}
+.mackBookPro{
+	background-image:  url("../../assets/images/promos/promo_mack_book_pro_large.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	background-size: auto;	
+	height: 36.125rem;
+	width: 58.313rem;
+}
+.fitness{
+	background-image:  url("../../assets/images/promos/promo_fitness_alt__large.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	background-size: auto;	
+	height: 36.125rem;
+	width: 58.313rem;
+}
+.appleCard{
+	background-image:  url("../../assets/images/promos/tile__card_large.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	background-size: auto;	
+	height: 36.125rem;
+	width: 58.313rem;
+}
+.tradein{
+	background-image:  url("../../assets/images/promos/promo_iphone_tradein__large.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	background-size: auto;	
+	height: 36.125rem;
+	width: 58.313rem;
 }
