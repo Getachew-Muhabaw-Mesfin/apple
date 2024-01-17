@@ -1,32 +1,40 @@
 .apple_watch9_series {
   background-image: url("../../assets/images/promos/promo_apple_watch_series_9_order_large.jpg");
   color: white;
- 
-}
-.commen-style{
- background-color: #fbfbfd;
-  background-position: bottom;
-  padding-top: 35px;
-  background-size: auto;
-  height: 36.125rem;
-  width: 58.313rem;
-  
 }
 .watchUltra2 {
   background-image: url("../../assets/images/promos//promo_apple_watch_ultra2_order_large.jpg");
-  
 }
 .mackBookPro {
   background-image: url("../../assets/images/promos/promo_mack_book_pro_large.jpg");
 }
 .fitness {
   background-image: url("../../assets/images/promos/promo_fitness_alt__large.jpg");
-
 }
 .appleCard {
   background-image: url("../../assets/images/promos/tile__card_large.jpg");
 }
 .tradein {
   background-image: url("../../assets/images/promos/promo_iphone_tradein__large.jpg");
-
+}
+.commen-style {
+  background-color: #fbfbfd;
+  background-position: bottom;
+  padding-top: 35px;
+  background-size: auto;
+  height: 36.125rem;
+  width: 58.313rem;
+}
+.description_style {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-size: 24px;
+  line-height: 1.2381;
+  font-weight: 400;
+  letter-spacing: 0.016em;
+  margin-top: 4px;
 }

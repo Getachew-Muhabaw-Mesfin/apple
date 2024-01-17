@@ -28,21 +28,21 @@ const products = [
     id: 4,
     icon: Fitness,
     description:
-      "From HIIT to Yoga. From 5 to 45 minutes. There's Something For everyone",
+      "From HIIT to Yoga. From 5 to 45 minutes. \n There's Something For everyone",
     bgImageWithStyle: "fitness commen-style",
   },
   {
     id: 5,
     icon: ApplCard,
-    description: "Get up to 3% Daily Cash back with every Purchase",
+    description: "Get up to 3% Daily Cash back \n with every Purchase",
     bgImageWithStyle: "appleCard commen-style",
   },
   {
     id: 6,
     icon: TradeIn,
     description:
-      "Get $180-$620 in credit when you trade in iPhone 11 or Higher.",
+      "Get $180-$620 in credit when \n you trade in iPhone 11 or Higher.",
     bgImageWithStyle: "tradein commen-style",
   },
 ];
-export default products
+export default products;

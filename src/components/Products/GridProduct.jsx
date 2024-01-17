@@ -1,9 +1,9 @@
 import Link from "../Link/Link";
 import products from "./produt_data";
+
 const GridProduct = () => {
-  //TODO: Add style on Describtion 
   return (
-    <div className="row">
+    <div className="row m-3">
       {products.map((product, id) => (
         <div
           key={id}
@@ -12,9 +12,13 @@ const GridProduct = () => {
           <div className="text-center">
             <img src={product.icon} alt="logo" />
           </div>
-          <div className="text-center">
-            {product.description}
-            <br />
+          <div className="description_style">
+            {product.description.split("\n").map((line, index) => (
+              <div key={index}>
+                {line}
+                <br />
+              </div>
+            ))}
           </div>
           <Link />
         </div>
@@ -24,6 +28,35 @@ const GridProduct = () => {
 };
 
 export default GridProduct;
+
+///////////////////////////////////////Without A Break for Products that has Loger description //////////////////////////
+
+// import Link from "../Link/Link";
+// import products from "./produt_data";
+// const GridProduct = () => {
+//   return (
+//     <div className="row">
+//       {products.map((product, id) => (
+//         <div
+//           key={id}
+//           className={`${product.bgImageWithStyle} col-sm-12 col-md-6`}
+//         >
+//           <div className="text-center">
+//             <img src={product.icon} alt="logo" />
+//           </div>
+//           <div className="description_style">
+//             {product.description}
+//           </div>
+//           <Link />
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default GridProduct;
+
+
 
 //////////////////////////Reference incase if not working  ////////////////////////
 // import Watch9 from "../../assets/images/logos/promo_logo_apple_watch_series_9_large.png";
