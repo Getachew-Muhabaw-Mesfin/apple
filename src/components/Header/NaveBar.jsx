@@ -3,6 +3,64 @@ import applLogo from "../../assets/images/logos/logo-sm.png";
 import cart from "../../assets/images/logos/cart-sm.png";
 import "./Navbar.css";
 
+const naveItems = [
+  {
+    id: 1,
+    text: "Store",
+    link: "https://www.apple.com/us/shop/goto/store",
+  },
+  {
+    id: 2,
+    text: "Mac",
+    link: "https://www.apple.com/mac/",
+  },
+  {
+    id: 3,
+    text: "iPad",
+    link: "https://www.apple.com/iPad/",
+  },
+  {
+    id: 4,
+    text: "iPhone",
+    link: "https://www.apple.com/iphone/",
+  },
+  {
+    id: 5,
+    text: "Watch",
+    link: "https://www.apple.com/watch/",
+  },
+  {
+    id: 6,
+    text: "Vision",
+    link: "https://www.apple.com/apple-vision-pro/",
+  },
+  {
+    id: 7,
+    text: "AirPods",
+    link: "https://www.apple.com/airpods/",
+  },
+  {
+    id: 8,
+    text: "TV & Home",
+    link: "https://www.apple.com/tv-home/",
+  },
+  {
+    id: 9,
+    text: "Entertainment",
+    link: "https://www.apple.com/entertainment/",
+  },
+  {
+    id: 10,
+    text: "Accessories",
+    link: "https://www.apple.com/us/shop/goto/buy_accessories",
+  },
+  {
+    id: 11,
+    text: "Support",
+    link: "https://support.apple.com/?cid=gn-ols-home-hp-tab",
+  },
+];
+
 const NaveBar = () => {
   return (
     // TODO: Working on Reusablity of List and Pass text and Link As Object
@@ -17,67 +75,22 @@ const NaveBar = () => {
           >
             ☰
           </button>
-          <a className="navbar-brand mx-auto" href="#">
+          <a className="navbar-brand mx-auto" href="www.apple.com">
             <img src={applLogo} />
           </a>
 
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav nav-justified w-100 nav-fill">
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/mac/">
-                  Store
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/mac/">
-                  Mac
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/mac/">
-                  iPad
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  iphone
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  Watch
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  Vision
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  AirPods
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  Tv&Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  Entertainment
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  Accessories
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  support
-                </a>
-              </li>
+              {naveItems.map((naveItem, i) => (
+                <li className="nav-item" key={i}>
+                  <a
+                    className="nav-link js-scroll-trigger"
+                    href={naveItem.link}
+                  >
+                    {naveItem.text}
+                  </a>
+                </li>
+              ))}
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="/search/">
                   <img src={search} />
