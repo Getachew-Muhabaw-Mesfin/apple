@@ -2,6 +2,7 @@ import search from "../../assets/images/logos/search-icon-sm.png";
 import applLogo from "../../assets/images/logos/logo-sm.png";
 import cart from "../../assets/images/logos/cart-sm.png";
 import "./Navbar.css";
+import AddProduct from "../admin/AddProduct";
 
 const naveItems = [
   {
@@ -101,6 +102,7 @@ const NaveBar = () => {
                   <img src={cart} />
                 </a>
               </li>
+              <AddProduct/>
             </ul>
           </div>
         </nav>
