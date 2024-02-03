@@ -25,32 +25,15 @@ function AddProduct() {
         </Modal.Header>
         <Modal.Body>
           <Form>
-            <Form.Group
-              className="mb-6"
-              controlId="AddProductForm.ControlInput1"
-            >
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@AddProduct.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group
-              className="mb-6"
-              controlId="AddProductForm.ControlTextarea1"
-            >
-              <Form.Label>AddProduct textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
+           {/* //input filds hear */}
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+        
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+          Add Product
           </Button>
         </Modal.Footer>
       </Modal>
