@@ -10,7 +10,6 @@ const ProductDetail = () => {
     axios
       .get(`http://127.0.0.1:5000/api/v1/products/${productId}`)
       .then((response) => {
-      
         setProduct(response.data.product);
       })
       .catch((error) => {
@@ -19,15 +18,20 @@ const ProductDetail = () => {
   }, [productId]);
 
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <h1>{product.product_name}</h1>
-      <p>{product.product_brief_description}</p>
-      <p>{`Starting at ${product.starting_price}`}</p>
-      <p>{product.price_range}</p>
-      <img src={product.product_img} alt="" />
+    <div className="container mt-5 pt-5">
+      <div className="row">
+        <div className="col-md-6">
+          <img src={product.product_img} alt="" className="img-fluid" />
+        </div>
+        <div className="col-md-6">
+          <h1 className="mb-4">{product.product_name}</h1>
+          <p className="lead">{product.product_brief_description}</p>
+          <p className="font-weight-bold">
+            Starting at {product.starting_price}
+          </p>
+          <p>{product.price_range}</p>
+        </div>
+      </div>
     </div>
   );
 };
