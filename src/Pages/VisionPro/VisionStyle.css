@@ -1,0 +1,16 @@
+.vision_pro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../../assets/images/heroes/hero_apple_vision_pro_largetall.jpg");
+  height: 43.75rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-color: #fbfbfd;
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  color: #fff;
+  margin-bottom: 10px;
+}

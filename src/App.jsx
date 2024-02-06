@@ -1,16 +1,21 @@
-import NaveBar from "./components/Header/NaveBar";
-import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/Home";
-import {Routes,Route} from 'react-router-dom'
+import PageNotFound from "./Pages/404/PageNotFound";
+import Iphones from "./Pages/Iphone/Iphones";
+import VisionPro from "./Pages/VisionPro/VisionPro";
+import SharedLayout from "./Pages/SharedLayout";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <NaveBar />
       <Routes>
-        <Route path="/" element= {<Home/>}/>
+        <Route path="/" element={<SharedLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="iphones" element={<Iphones />} />
+          <Route path="visionPro" element={<VisionPro />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Route>
       </Routes>
-      <Footer />
     </>
   );
 }
