@@ -48,7 +48,12 @@ function AddProduct() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button
+        variant="primary"
+        onClick={handleShow}
+        size="lg"
+        aria-labelledby="add-product-modal-sizes-title-lg"
+      >
         Add Product
       </Button>
 
@@ -58,7 +63,9 @@ function AddProduct() {
         aria-labelledby="a-modal-sizes-title-lg"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="a-modal-sizes-title-lg">Add Product</Modal.Title>
+          <Modal.Title id="add-product-modal-sizes-title-lg">
+            Add Product
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
