@@ -3,62 +3,63 @@ import applLogo from "../../assets/images/logos/logo-sm.png";
 import cart from "../../assets/images/logos/cart-sm.png";
 import "./Navbar.css";
 import AddProduct from "../admin/AddProduct";
+import {Link} from "react-router-dom"
 
 const naveItems = [
   {
     id: 1,
     text: "Store",
-    link: "https://www.apple.com/us/shop/goto/store",
+    link: "store",
   },
   {
     id: 2,
     text: "Mac",
-    link: "https://www.apple.com/mac/",
+    link: "mac",
   },
   {
     id: 3,
     text: "iPad",
-    link: "https://www.apple.com/iPad/",
+    link: "ipad",
   },
   {
     id: 4,
     text: "iPhone",
-    link: "https://www.apple.com/iphone/",
+    link: "iphones",
   },
   {
     id: 5,
     text: "Watch",
-    link: "https://www.apple.com/watch/",
+    link: "watch",
   },
   {
     id: 6,
     text: "Vision",
-    link: "https://www.apple.com/apple-vision-pro/",
+    link: "visionPro",
   },
   {
     id: 7,
     text: "AirPods",
-    link: "https://www.apple.com/airpods/",
+    link: "airpods",
   },
   {
     id: 8,
     text: "TV & Home",
-    link: "https://www.apple.com/tv-home/",
+    link: "tv",
   },
   {
     id: 9,
     text: "Entertainment",
-    link: "https://www.apple.com/entertainment/",
+    link: "entertainment",
   },
   {
     id: 10,
     text: "Accessories",
-    link: "https://www.apple.com/us/shop/goto/buy_accessories",
+    link: "accessories",
   },
   {
     id: 11,
     text: "Support",
-    link: "https://support.apple.com/?cid=gn-ols-home-hp-tab",
+    link: "support",
   },
 ];
 
@@ -76,31 +77,31 @@ const NaveBar = () => {
           >
             ☰
           </button>
-          <a className="navbar-brand mx-auto" href="www.apple.com">
+          <Link className="navbar-brand mx-auto" to="www.apple.com">
             <img src={applLogo} />
-          </a>
+          </Link>
 
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav nav-justified w-100 nav-fill">
               {naveItems.map((naveItem, i) => (
                 <li className="nav-item" key={i}>
-                  <a
+                  <Link
                     className="nav-link js-scroll-trigger"
-                    href={naveItem.link}
+                    to={naveItem.link}
                   >
                     {naveItem.text}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/search/">
+                <Link className="nav-link js-scroll-trigger" to="/search/">
                   <img src={search} />
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/cart/">
+                <Link className="nav-link js-scroll-trigger" to="/cart/">
                   <img src={cart} />
-                </a>
+                </Link>
               </li>
               <AddProduct/>
             </ul>
