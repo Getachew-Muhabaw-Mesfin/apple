@@ -62,36 +62,97 @@ function AddProduct() {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="product_url">
-              <Form.Label>Product URL</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter product URL"
-                name="product_url"
-                value={formData.product_url}
-                onChange={handleChange}
-              />
-            </Form.Group>
+            <div >
+              <div>
+                <Form.Group controlId="product_url">
+                  <Form.Label>Product URL</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter product URL"
+                    name="product_url"
+                    value={formData.product_url}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
+              </div>
+              <Form.Group controlId="product_name">
+                <Form.Label>Product Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter product name"
+                  name="product_name"
+                  value={formData.product_name}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="product_name">
+                <Form.Label>Starting Price</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter product name"
+                  name="starting_price"
+                  value={formData.product_name}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="product_name">
+                <Form.Label>Price Range</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter product name"
+                  name="price_range"
+                  value={formData.product_name}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="product_name">
+                <Form.Label>Brif Description</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter product name"
+                  name="brief_description"
+                  value={formData.product_name}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="product_name">
+                <Form.Label>Full Description</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter product name"
+                  name="full_description"
+                  value={formData.product_name}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="product_name">
+                <Form.Label>Product Image</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter product name"
+                  name="product_img"
+                  value={formData.product_name}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="product_name">
+                <Form.Label>Product Link</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter product name"
+                  name="product_link"
+                  value={formData.product_name}
+                  onChange={handleChange}
+                />
+              </Form.Group>
 
-            <Form.Group controlId="product_name">
-              <Form.Label>Product Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter product name"
-                name="product_name"
-                value={formData.product_name}
-                onChange={handleChange}
-              />
-            </Form.Group>
-
-            {/* Add other form fields similar to the examples above */}
-
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" type="submit">
-              Add Product
-            </Button>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+              <Button variant="primary" type="submit">
+                Add Product
+              </Button>
+            </div>
           </Form>
         </Modal.Body>
       </Modal>
