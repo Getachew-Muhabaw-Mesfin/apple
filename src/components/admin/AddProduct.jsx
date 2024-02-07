@@ -61,10 +61,7 @@ function AddProduct() {
         Add Product
       </Button>
 
-      <Modal
-        show={show}
-        onHide={handleClose}
-      >
+      <Modal show={show} onHide={handleClose} className="modal-lg">
         <Modal.Header closeButton>
           <Modal.Title id="add-product-modal-sizes-title-lg">
             Add Product
@@ -171,12 +168,10 @@ function AddProduct() {
                 </Form.Group>
               </div>
 
-              <div className="col-md-6">
-                <Button variant="secondary" onClick={handleClose}>
+              <div className="col-md-6 my-3 ">
+                <Button variant="secondary" onClick={handleClose} className="mx-3">
                   Close
                 </Button>
-              </div>
-              <div className="col-md-6">
                 <Button variant="primary" type="submit">
                   Add Product
                 </Button>
