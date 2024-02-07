@@ -1,11 +1,9 @@
-
 import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 
-const API=null;
-// const API = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${
-//   import.meta.env.VITE_APPLE_CHANNEL_ID
-// }&maxResults=6&order=date&key=${import.meta.env.VITE_YOUTUBE_API_KEY}`;
+const API = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${
+  import.meta.env.VITE_APPLE_CHANNEL_ID
+}&maxResults=6&order=date&key=${import.meta.env.VITE_YOUTUBE_API_KEY}`;
 
 const Videos = () => {
   const [videos, setVideos] = useState([]);

@@ -8,9 +8,13 @@ import { CartContext } from "../../components/Context/CartContext";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState({});
+  const [showMore, setShowMore] = useState(false);
   const { productId } = useParams();
   const { setCart } = useContext(CartContext);
 
+  function handleMoreClick() {
+    setShowMore(!showMore);
+  }
   const handleClick = () => {
     setCart((prev) => prev + 1);
   };
@@ -53,9 +57,14 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-      <Card.Text className="text-black">
-        {product.product_description}
-      </Card.Text>
+      <button onClick={handleMoreClick}>
+        {showMore ? "Hide" : "Show"} details
+      </button>
+      {showMore && (
+        <Card.Text className="text-black">
+          {product.product_description}
+        </Card.Text>
+      )}
     </Card>
   );
 };

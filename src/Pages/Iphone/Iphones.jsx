@@ -10,8 +10,6 @@ const Iphones = () => {
     axios
       .get("http://127.0.0.1:5000/api/v1/products")
       .then((response) => {
-        console.log("Response:", response);
-        console.log("Response Data:", response.data);
         setProducts(response.data.products);
       })
       .catch((error) => {

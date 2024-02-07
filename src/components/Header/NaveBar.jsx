@@ -68,8 +68,8 @@ const naveItems = [
 
 const NaveBar = () => {
   const { cart } = useContext(CartContext);
+
   return (
-    // TODO: Working on Reusablity of List and Pass text and Link As Object
     <div className="nav-wrapper fixed-top bg-dark text-center ">
       <div className="container">
         <nav className="navbar navbar-toggleable-sm navbar-expand-md">
@@ -103,9 +103,9 @@ const NaveBar = () => {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item" >
                 <button type="button" className="position-relative">
-                  <BsFillCartFill
+                  <BsFillCartFill size={30}
                     style={{ color: "blue", backgroundColor: "none" }}
                   />
                   <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
