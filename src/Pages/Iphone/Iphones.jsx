@@ -52,9 +52,6 @@ const Iphones = () => {
                 <div className="links-wrapper">
                   <ul>
                     <li>
-                      {/* <Link to={`/iphone/${product.product_url}`}>
-                        Learn more
-                      </Link> */}
                       <Link to={`/iphone/${product.product_id}`}>
                         Learn more
                       </Link>

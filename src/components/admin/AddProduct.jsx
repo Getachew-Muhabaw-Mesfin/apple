@@ -8,7 +8,12 @@ function AddProduct() {
   const [formData, setFormData] = useState({
     product_url: "",
     product_name: "",
-    // Add other form fields here
+    starting_price: "",
+    price_range: "",
+    brief_description: "",
+    full_description: "",
+    product_img: "",
+    product_link: "",
   });
 
   const handleClose = () => setShow(false);
@@ -24,25 +29,24 @@ function AddProduct() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     try {
-      const response = await fetch("http://127.0.0.1:5000/addNewProduct", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "http://127.0.0.1:5000/api/v1/products/addNewProduct",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-
-      // Handle successful response, e.g., close the modal
       handleClose();
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error);
-      // Handle error, e.g., show an error message to the user
     }
   };
 
@@ -60,7 +64,6 @@ function AddProduct() {
       <Modal
         show={show}
         onHide={handleClose}
-        aria-labelledby="a-modal-sizes-title-lg"
       >
         <Modal.Header closeButton>
           <Modal.Title id="add-product-modal-sizes-title-lg">
@@ -99,9 +102,9 @@ function AddProduct() {
                   <Form.Label>Starting Price</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Enter product name"
+                    placeholder="Enter Starting Price"
                     name="starting_price"
-                    value={formData.product_name}
+                    value={formData.starting_price}
                     onChange={handleChange}
                   />
                 </Form.Group>
@@ -111,9 +114,9 @@ function AddProduct() {
                   <Form.Label>Price Range</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Enter product name"
+                    placeholder="Enter Price Range"
                     name="price_range"
-                    value={formData.product_name}
+                    value={formData.price_range}
                     onChange={handleChange}
                   />
                 </Form.Group>
@@ -124,9 +127,9 @@ function AddProduct() {
                   <Form.Label>Brif Description</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Enter product name"
+                    placeholder="Enter Brief Discription"
                     name="brief_description"
-                    value={formData.product_name}
+                    value={formData.brief_description}
                     onChange={handleChange}
                   />
                 </Form.Group>
@@ -136,9 +139,9 @@ function AddProduct() {
                   <Form.Label>Full Description</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Enter product name"
+                    placeholder="Enter Full description"
                     name="full_description"
-                    value={formData.product_name}
+                    value={formData.full_description}
                     onChange={handleChange}
                   />
                 </Form.Group>
@@ -148,9 +151,9 @@ function AddProduct() {
                   <Form.Label>Product Image</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Enter product name"
+                    placeholder="Enter Product Image Link"
                     name="product_img"
-                    value={formData.product_name}
+                    value={formData.product_img}
                     onChange={handleChange}
                   />
                 </Form.Group>
@@ -160,9 +163,9 @@ function AddProduct() {
                   <Form.Label>Product Link</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Enter product name"
+                    placeholder="Enter product link"
                     name="product_link"
-                    value={formData.product_name}
+                    value={formData.product_link}
                     onChange={handleChange}
                   />
                 </Form.Group>
