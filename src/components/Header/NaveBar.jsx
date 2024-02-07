@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import search from "../../assets/images/logos/search-icon-sm.png";
 import applLogo from "../../assets/images/logos/logo-sm.png";
-import cart from "../../assets/images/logos/cart-sm.png";
+// import cart from "../../assets/images/logos/cart-sm.png";
 import "./Navbar.css";
 import AddProduct from "../admin/AddProduct";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import { BsFillCartFill } from "react-icons/bs";
+import { CartContext } from "../Context/CartContext";
 
 const naveItems = [
   {
@@ -64,6 +67,7 @@ const naveItems = [
 ];
 
 const NaveBar = () => {
+  const { cart } = useContext(CartContext);
   return (
     // TODO: Working on Reusablity of List and Pass text and Link As Object
     <div className="nav-wrapper fixed-top bg-dark text-center ">
@@ -98,12 +102,19 @@ const NaveBar = () => {
                   <img src={search} />
                 </Link>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link js-scroll-trigger" to="/cart/">
-                  <img src={cart} />
-                </Link>
+                <button type="button" className="position-relative">
+                  <BsFillCartFill
+                    style={{ color: "blue", backgroundColor: "none" }}
+                  />
+                  <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {cart}
+                    <span className="visually-hidden">unread messages</span>
+                  </span>
+                </button>
               </li>
-              <AddProduct/>
+              <AddProduct />
             </ul>
           </div>
         </nav>

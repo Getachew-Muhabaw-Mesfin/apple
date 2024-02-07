@@ -55,8 +55,8 @@ function AddProduct() {
       <Button
         variant="primary"
         onClick={handleShow}
-        size="lg"
         aria-labelledby="add-product-modal-sizes-title-lg"
+        size="sm"
       >
         Add Product
       </Button>
